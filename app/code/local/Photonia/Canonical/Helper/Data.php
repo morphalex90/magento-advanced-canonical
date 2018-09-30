@@ -4,16 +4,16 @@ class Photonia_Canonical_Helper_Data extends Mage_Core_Helper_Abstract {
 
 	public function getHeadProductCanonicalUrl(){
 		
-		$base_url = Mage::getBaseUrl(); // url del sito
-		$product_id =  Mage::app()->getRequest()->getParam('id'); // mi faccio dare l'id del prodotto
-		$_product = Mage::getModel('catalog/product')->load($product_id); // carico il prodotto
+		$base_url = Mage::getBaseUrl(); // base url
+		$product_id =  Mage::app()->getRequest()->getParam('id'); // get the product id
+		$_product = Mage::getModel('catalog/product')->load($product_id); // load the product
 		
-		$categoryIds = $_product->getCategoryIds(); // mi faccio dare tutti gli id delle categorie
-        if (isset($categoryIds[0])){ // se ha almeno 1 categoria
-            $category = Mage::getModel('catalog/category')->load($categoryIds[0]); // carico la cateogria
-            $url = str_replace('.html','',$category->getUrlPath()).'/'.$_product->getUrlPath(); // genero l'url con categoria/prodotto
+		$categoryIds = $_product->getCategoryIds(); // load all categories
+        if (isset($categoryIds[0])){ // if at least 1 category exist
+            $category = Mage::getModel('catalog/category')->load($categoryIds[0]); // load the first category
+            $url = str_replace('.html','',$category->getUrlPath()).'/'.$_product->getUrlPath(); // generate the url with the category url
         } else {
-            $url = $_product->getUrlPath(); // se il prodotto non ha categorie allora generlo l'url con solo il prodotto
+            $url = $_product->getUrlPath(); // the product has no category, generate the url without product category
         }
 		
         return $base_url.$url;
