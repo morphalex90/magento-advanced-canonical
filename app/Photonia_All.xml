@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Photonia_Showmodel>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Photonia_Showmodel>
+		<Photonia_Canonical>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Photonia_Canonical>
+	</modules>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Photonia_Canonical>
+			<version>0.1.0</version>
+		</Photonia_Canonical>
+	</modules>
+	<frontend>
+		<layout>
+			<updates>
+				<photonia_canonical>
+					<file>canonical.xml</file>
+				</photonia_canonical>
+			</updates>
+		</layout>
+	</frontend> 
+	<global>
+		<helpers>
+			<canonical>
+				<class>Photonia_Canonical_Helper</class>
+			</canonical>
+		</helpers>
+	</global>
+</config>
