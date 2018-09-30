@@ -1,4 +1,4 @@
-# advanced-magento-canonical
+# Advanced magento canonical
 
 Custom module for using categories in product canonical
 
