@@ -1,5 +1,11 @@
-# Advanced magento canonical
+<h1>Advanced magento canonical</h1>
 
-Custom module for using categories in product canonical
+<h2>Custom module for using categories in product canonical</h2>
 
-Disable product canonicals from backoffice to avoid duplicate canonicals
+
+Limitations
+- it only work with the first category so 
+
+
+How to avoid canonical diplications
+- disable product canonicals from backoffice
