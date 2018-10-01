@@ -4,7 +4,7 @@
 
 
 Limitations
-- it only work with the first category so 
+- it only work with the first category
 
 
 How to avoid canonical diplications
