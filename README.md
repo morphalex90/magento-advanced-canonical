@@ -7,5 +7,5 @@ Limitations
 - it only work with the first category
 
 
-How to avoid canonical diplications
+How to avoid canonical duplications
 - disable product canonicals from backoffice
