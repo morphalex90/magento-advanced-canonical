@@ -5,4 +5,4 @@
 In order to avoid having duplicate canonicals, disable product canonicals from backoffice
 
 Limitations
-- it only work with the first category (or at least the first that magento retrieve from getCategoryIds)
+- it only works with the first category (or at least the first that magento retrieve from getCategoryIds)
