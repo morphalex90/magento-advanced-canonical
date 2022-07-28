@@ -1,6 +1,6 @@
 <?php
 
-class Photonia_Canonical_Helper_Data extends Mage_Core_Helper_Abstract {
+class Brand_Canonical_Helper_Data extends Mage_Core_Helper_Abstract {
 
 	public function getHeadProductCanonicalUrl(){
 		
